@@ -1,6 +1,6 @@
 import React from "react";
 
-const spentTotal = () => {
+const SpentTotal = () => {
   return (
     <div className="alert alert-primary">
       <span> spent so far : 1300$</span>
@@ -8,4 +8,4 @@ const spentTotal = () => {
   );
 };
 
-export default spentTotal;
+export default SpentTotal;
