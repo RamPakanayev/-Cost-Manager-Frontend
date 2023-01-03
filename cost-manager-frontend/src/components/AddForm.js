@@ -16,11 +16,15 @@ const AddForm = () => {
 
         <div className="col-sm">
           <label htmlFor="catgory">Catgory</label>
-          <select id="catgory">
-            <option label="Resturants">Resturants</option>
-            <option label="Shopping">Shopping</option>
-            <option label="Bills">Bills</option>
-            <option label="Other">Other</option>
+          <select id="catgory" className="form-control">
+            <option value="">Select Catgory</option>
+            <option value="Food">Food</option>
+            <option value="health">Health</option>
+            <option value="housing">Housing</option>
+            <option value="sport">Sport</option>
+            <option value="education">Education</option>
+            <option value="transportation">Transportation</option>
+            <option value="Other">Other</option>
           </select>
         </div>
 
