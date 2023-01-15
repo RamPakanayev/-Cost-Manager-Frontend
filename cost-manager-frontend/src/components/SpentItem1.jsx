@@ -1,6 +1,5 @@
 import React from "react";
 import { TiDelete } from "react-icons/ti";
-import LocalStorage from "../LocalStorage";
 
 const SpentItem = (props) => {
   const handleDelete = async (e) => {
@@ -9,7 +8,7 @@ const SpentItem = (props) => {
     await LocalStorage.removeItem(`expense-${props.id}`);
     // Update the expenses state
     const storedExpenses = await LocalStorage.getItem("expenses");
-    // setExpenses(storedExpenses);
+    setExpenses(storedExpenses);
   };
   return (
     <li className="list-group-item d-flex justify-content-between align-items-center">
