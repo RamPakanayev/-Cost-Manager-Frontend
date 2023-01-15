@@ -1,7 +1,7 @@
 import React from "react";
-import SpentTotal from "./components/SpentTotal";
-import SpentList from "./components/SpentList";
-import AddForm from "./components/AddForm";
+import SpentTotal from "./SpentTotal";
+import SpentList from "./SpentList";
+import AddForm from "./AddForm";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
