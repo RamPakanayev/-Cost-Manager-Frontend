@@ -1,8 +1,9 @@
 import moment from "moment";
+
 const LOCAL_STORAGE_KEY = "cost_items";
 
-export default class LocalStorageLibrary {
-  static async addCostItem(costItem) {
+class LocalStorageLibrary {
+  static addCostItem(costItem) {
     try {
       let costItems = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || [];
       costItems.push(costItem);
@@ -12,7 +13,7 @@ export default class LocalStorageLibrary {
     }
   }
 
-  static async getCostItems() {
+  static getCostItems() {
     try {
       return JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || [];
     } catch (error) {
@@ -20,9 +21,9 @@ export default class LocalStorageLibrary {
     }
   }
 
-  static async getReport(month, year) {
+  static getReport(month, year) {
     try {
-      const costItems = await this.getCostItems();
+      const costItems = this.getCostItems();
       const filteredItems = costItems.filter((item) => {
         const itemDate = moment(item.date);
         return itemDate.month() === month - 1 && itemDate.year() === year;
@@ -33,3 +34,5 @@ export default class LocalStorageLibrary {
     }
   }
 }
+
+export default LocalStorageLibrary;
