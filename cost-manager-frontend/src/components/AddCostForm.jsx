@@ -45,13 +45,13 @@ function AddCostForm({ handleAddCostItem }) {
       <label>
         Category:
         <select value={category} onChange={(e) => setCategory(e.target.value)}>
-          <option value="groceries">Select a category</option>
+          <option value="">Select a category</option>
           <option value="groceries">Groceries</option>
           <option value="entertainment">Entertainment</option>
           <option value="transportation">Transportation</option>
-          <option value="Housing">Housing</option>
-          <option value="Personal Care">Personal Care</option>
-          <option value="Other">Other</option>
+          <option value="housing">Housing</option>
+          <option value="personal_care">Personal Care</option>
+          <option value="other">Other</option>
         </select>
       </label>
       <br />
