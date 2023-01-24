@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     setImagePath(process.env.PUBLIC_URL + "/Logo.png");
-  }, []);
+  }, []); // this will make the effect to be called only once when the component is rendered
 
   async function handleAddCostItem(sum, category, description) {
     try {
@@ -33,7 +33,7 @@ function App() {
         window.alert("The new cost has successfully added !");
       }
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   }
 
@@ -43,13 +43,13 @@ function App() {
       setReport(reportData);
       setShowReport(true);
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   }
 
   return (
     <div className="App">
-      <img src={imagePath} alt="Logo"></img>
+      <img src={imagePath} alt="Logo" />
       <AddCostForm handleAddCostItem={handleAddCostItem} />
 
       <ReportsForm
