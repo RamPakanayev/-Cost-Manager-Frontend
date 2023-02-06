@@ -39,16 +39,6 @@ min="0"
 </label>
 <br />
 <label>
-Description:
-<input
-type="text"
-value={description}
-onChange={(e) => setDescription(e.target.value)}
-placeholder="Enter a description"
-/>
-</label>
-<br />
-<label>
 Category:
 <select value={category} onChange={(e) => setCategory(e.target.value)}>
 <option value="">Select a category</option>
@@ -61,6 +51,17 @@ Category:
 </select>
 </label>
 <br />
+<label>
+Description:
+<input
+type="text"
+value={description}
+onChange={(e) => setDescription(e.target.value)}
+placeholder="Enter a description"
+/>
+</label>
+<br />
+
 <button
 onClick={(e) => {
 e.preventDefault();
