@@ -1,3 +1,7 @@
+//Ram Pakanayev 313561433
+//Carmel Isaac 320827512
+//Michelle Chorny 207435918
+
 import React from "react";
 
 // A functional component that receives an object 'reportData' as a prop.

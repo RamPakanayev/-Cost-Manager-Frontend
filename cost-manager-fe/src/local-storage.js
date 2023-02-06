@@ -1,6 +1,8 @@
-// LocalStorageLibrary.js
-// This file contains all the functions that handle the local storage operations
+//Ram Pakanayev 313561433
+//Carmel Isaac 320827512
+//Michelle Chorny 207435918
 
+// This file contains all the functions that handle the local storage operations
 import moment from "moment";
 const LOCAL_STORAGE_KEY = "cost_items";
 
