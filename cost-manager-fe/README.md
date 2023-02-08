@@ -6,6 +6,32 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `sudo pm2 --name CostManagerFE start npm -- run "server-start"`
+
+Runs the app in the production mode, and server the npm run server-start command in the background
+
+### `sudo pm2 logs`
+
+show the logs for pm2 processes
+
+### `sudo pm2 ps`
+
+show the currently running pm2 processes
+
+### `sudo pm2 delete <process id>`
+
+for example  `sudo pm2 delete 0`
+
+### `npm run server-start`
+
+Runs the app in the production mode using the serve package
+the serve package needs a build that can be produced by `npm run build`
+afterwards we can run the serve command using
+- `serve -s build` 
+- `sudo serve -p 80 -s build` with specific port 
+
+to install the serve package run `sudo npm install -g serve`
+
 ### `npm start`
 
 Runs the app in the development mode.\
