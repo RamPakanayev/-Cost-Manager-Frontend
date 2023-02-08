@@ -16,9 +16,10 @@ function ReportsForm({
 }) {
   useEffect(() => {
     const currentDate = new Date();
-    setMonth(currentDate.getMonth() + 1);
-    setYear(currentDate.getFullYear());
-  }); // this will make the effect to be called only once when the component is rendered
+    setMonth(String(currentDate.getMonth() + 1));
+    setYear(String(currentDate.getFullYear()));
+  }, [setMonth, setYear]);
+   
 
   return (
     <form>
