@@ -3,10 +3,7 @@ to run the server firstly connect to your server and cd to Cost-Manager-Frontend
 `cd Cost-Manager-Frontend/cost-manager-fe/`
 
 then if the server is not running start the server with pm2:
-`
-npm run build
-sudo pm2 --name CostManagerFE start npm -- run "server-start"
-`
+`sudo pm2 --name CostManagerFE start npm -- run "server-start"`
 
 ## Available Scripts
 
