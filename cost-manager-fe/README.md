@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Running the server
+to run the server firstly connect to your server and cd to Cost-Manager-Frontend folder:
+`cd Cost-Manager-Frontend/cost-manager-fe/`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+then if the server is not running start the server with pm2:
+`
+npm run build
+sudo pm2 --name CostManagerFE start npm -- run "server-start"
+`
 
 ## Available Scripts
 
