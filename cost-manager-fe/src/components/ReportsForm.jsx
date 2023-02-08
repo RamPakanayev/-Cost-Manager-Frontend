@@ -51,7 +51,7 @@ function ReportsForm({
           handleGetReport(parseInt(month), parseInt(year));
         }}
       >
-        Get Report
+        Get Reports
       </button>
       {showReport && <Report reportData={report} />}
     </form>
