@@ -18,7 +18,11 @@ show the logs for pm2 processes
 
 show the currently running pm2 processes
 
-### `sudo pm2 delete <process id>`
+### `sudo netstat -tulpn | grep :80`
+
+shows proccess id that listens on port 80, to kill the proccess run `kill -9 <proccess_id>`
+
+### `sudo pm2 delete <process_id>`
 
 for example  `sudo pm2 delete 0`
 
