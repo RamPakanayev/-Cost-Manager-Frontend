@@ -1,7 +1,3 @@
-//Ram Pakanayev 313561433
-//Carmel Isaac 320827512
-//Michelle Chorny 207435918
-
 import React, { useState } from "react";
 
 // A functional component that receives a callback function 'handleAddCostItem' as a prop.
