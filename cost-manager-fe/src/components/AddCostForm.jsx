@@ -8,6 +8,7 @@ function AddCostForm({ handleAddCostItem }) {
 const [sum, setSum] = useState("");
 const [category, setCategory] = useState("");
 const [description, setDescription] = useState("");
+const [date, setDate] = useState(new Date());
 
 // A callback function for validating the form inputs.
 // It checks if the sum and description fields are not empty and displays an alert if they are.
@@ -61,7 +62,15 @@ placeholder="Enter a description"
 />
 </label>
 <br />
-
+      <label>
+        Date:
+        <input
+          type="date"
+          value={date.toISOString().substr(0, 10)}
+          onChange={(e) => setDate(new Date(e.target.value))}
+        />
+      </label>
+      <br />
 <button
 onClick={(e) => {
 e.preventDefault();
@@ -70,6 +79,7 @@ handleAddCostItem(sum, category, description);
 setSum("");
 setCategory("");
 setDescription("");
+//setDate(new Date(e.target.value));
 }
 }}
 >
