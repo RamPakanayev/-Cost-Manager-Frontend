@@ -33,6 +33,7 @@ function ReportsForm({
         />
       </label>
       <label>
+        <br/>
         Year:
         <input
           type="number"
