@@ -79,7 +79,7 @@ handleAddCostItem(sum, category, description,date);
 setSum("");
 setCategory("");
 setDescription("");
-//setDate(new Date(e.target.value));
+setDate(new Date());
 }
 }}
 >
