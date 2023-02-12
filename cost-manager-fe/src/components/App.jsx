@@ -20,7 +20,7 @@ useEffect(() => {
 
 // callback function that adds a new cost item to the local storage
 // It uses the LocalStorageLibrary tosave the new cost item
-async function handleAddCostItem(sum, category, description) {
+async function handleAddCostItem(sum, category, description,date) {
   try {
     if (category === "" || category === "Select a category")
       category = "Other";
@@ -33,7 +33,7 @@ async function handleAddCostItem(sum, category, description) {
         sum,
         category,
         description,
-        date: new Date(),
+        date,
       });
       window.alert("The new cost has successfully added !");
     }

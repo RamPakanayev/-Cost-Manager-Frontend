@@ -75,7 +75,7 @@ placeholder="Enter a description"
 onClick={(e) => {
 e.preventDefault();
 if (validateInputs()) {
-handleAddCostItem(sum, category, description);
+handleAddCostItem(sum, category, description,date);
 setSum("");
 setCategory("");
 setDescription("");
